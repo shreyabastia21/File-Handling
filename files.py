@@ -5,12 +5,12 @@ st.subheader("Uploading the CSV file")
 df=st.file_uploader("Upload the CSV file : ", type = ['csv','xlsx'])
 
 st.subheader("Loading the CSV file")
-df = pd.read_csv("C:\\Users\\Shreya Bastia\\Desktop\\Streamlit\\Products.csv")
+df = pd.read_csv("Products.csv")
 if df is not None:
    st.table(df.head())
 
 st.subheader("Working with Images directly")
-st.image("C:\\Users\\Shreya Bastia\\Desktop\\Streamlit\\img.png")
+st.image("img.png")
 
 st.subheader("Working with Images while uploading")
 img_file = st.file_uploader("Upload the Image file : ", type = ['png','jpeg'])
